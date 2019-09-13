@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png"></a>
+        <h1>MentMe Blog</h1>
+        <nav><a href="index.html">Home </a>| <a href="about-us.html">About </a>| <a href="faq.html">FAQ </a>| <a href="login.html">Login/ Register </a>| <a href="contact-us.html">Contact</a></nav>
+    </header>
+    <hr>
+    <h1>Sign Up</h1>
+    <hr>
+    <h1>Create an Account</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>Firstname: <input type="text" name="first_name" placeholder="Your Firstname" maxlength="50"></p>
+            <p>Lastname: <input type="text" name="last_name" placeholder="Your Lastname" maxlength="50"></p>
+            <p>Gender<br>
+                <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female</p>
+            <p>Date of Birth<br> <input type="date" name="dob"></p>
+            <p>Select your interests</p>
+            <ul>
+                <li><input type="checkbox" value="music" name="interest">Music</li>
+                <li><input type="checkbox" value="comedy" name="interest">Comedy</li>
+                <li><input type="checkbox" value="Showbiz" name="interest">Showbiz</li>
+                <li><input type="checkbox" value="education" name="interest">Education</li>
+            </ul>
+            <p>Age Range</p>
+            <select name="age_range">
+                <option>--Select Age--</option>
+            </select>
+            <p>Select Favourite Movies<br>
+                <small><mark>Select more than one where applicable</mark></small></p>
+            <select name="favemovies" size="4" multiple>
+                    <optgroup label="Series">
+                        <option>Game of Thrones</option>
+                        <option>Money Heist</option>
+                        <option>Big Bang Theory</option>
+                    </optgroup>
+                    <optgroup label="Movie">
+                        <option>silicon valley</option>
+                        <option>Billions</option>
+                        <option>The 100</option>
+                    </optgroup>
+                </select>
+            <p>Select Favourite Colour: <br><input type="color"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <p><strong>Upload Profile Picture</strong><br><small><mark>Pictures should not be more than 100kb</mark></small><br><input type="file" name="profile_pic"></p>
+
+                <p>Username: <input type="text" name="username" placeholder="Your Usename" maxlength="50"></p>
+
+                    <p>Password: <input type="password" name="pswd" placeholder="Your Password" maxlength="50"></p>
+
+                         <p>Retype Password: <input type="password" name="pswd" placeholder="Retype password" maxlength="50"></p>
+
+                         <p>Rate Us Now (0 t0 10)<br><input type="range" name="rate" min="5" max="10" step="10"></p>
+
+                     <p><input type="checkbox" name="agreement"> <small>I agree to your terms and conditions<br><a href="terms.html">Click here </a>for terms and conditions</small></p>
+
+                 <input type="submit" value="Sign Up"> <input type="reset" value="Clear Data">
+
+             </fieldset>
+        <fieldset>
+            <legend>Disclaimer</legend>
+            <p> All information provided were givem voluntarily by the bearer of the above details</p>
+        </fieldset>
+    </form>
+    <aside>
+        <dl>
+            <dd>
+                <h2>Other Links</h2>
+            </dd>
+        </dl>
+        <ul>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Copyright &copy; 2019</p>
+        <p>All right Reserved</p>
+    </footer>
+</body>
+
+</html>
